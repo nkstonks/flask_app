@@ -8,4 +8,4 @@ cursor = connection.cursor()
 # cursor.execute("CREATE TABLE auth (username TEXT, password TEXT)")
 
 credentials = cursor.execute("SELECT username, password FROM auth").fetchall()
-print(credentials)
+# print(credentials)

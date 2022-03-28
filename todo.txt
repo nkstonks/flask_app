@@ -1,1 +1,3 @@
 - hook up heroku to github
+- update readme
+- update UI
