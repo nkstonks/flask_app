@@ -1,3 +1,5 @@
 - hook up heroku to github
+
 - update readme
 - update UI
+- change auth.db into a mongodb database

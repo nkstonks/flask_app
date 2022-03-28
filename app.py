@@ -6,7 +6,6 @@ import os
 import pymongo
 import bcrypt
 import admincreds
-import emailer
 import datetime
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
@@ -14,7 +13,9 @@ from wtforms.validators import DataRequired
 
 app = Flask(__name__)
 
-client = pymongo.MongoClient("mongodb+srv://nkstonks:Kento0303@logins.cs2j1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+password = os.environ.get("FLASK_APP_PSW")
+
+client = pymongo.MongoClient(f"mongodb+srv://nkstonks:{password}@logins.cs2j1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 mydb = client["credentials"]
 collection = mydb["credentials"]
 
@@ -50,13 +51,12 @@ def admin():
         # for debugging
         # thing = 'Login requested for user {}, remember_me={}'.format(form.username.data, form.password.data)
         # print(thing)
-        auth_tuple = (str(form.username.data), str(form.password.data))
 
-        if auth_tuple in admincreds.credentials:
-            if auth_tuple == admincreds.credentials[0]:
-                message = "Hello there, welcome to the cooler kids club"
-            else:
-                message = None
+        username_corect = collection.find_one({"username" : form.username.data})
+        password_correct = collection.find_one({"password" : form.password.data})
+
+        if username_corect and password_correct:
+            message = "Hello there, welcome to the cooler kids club"
             return render_template("secret_page.html", message=message)
 
         else:
