@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <br>
+    <body>
+        {% if situation %}
+        {{situation}}
+        {% else %}
+        This is the blog page
+        {% endif %}
+        <br>
+        <br>
+    </body>
+{% endblock %}

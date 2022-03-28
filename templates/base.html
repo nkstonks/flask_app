@@ -1,0 +1,48 @@
+<head>
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "2731b14f91a7487184ea0afb04262c85"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJE9X9JELH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-168559693-1');
+        gtag('config', 'G-JVV9ZLTQJG');
+    </script>
+
+    <title>Nkrei</title>
+</head>
+
+<script src="static/responsive.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='collapsible.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<h1>Nkrei</h1>
+
+<div class="topnav" id="Topnav">
+    <a id="1" href="{{ url_for('home') }}">Home</a>
+    <a id="2" href="{{ url_for('about') }}">About</a>
+    <a id="4" href="{{ url_for('blog') }}">Blog</a>
+    <a id="6" href="{{ url_for('hello') }}">???</a>
+</div>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+
+<div class="footer">
+    <p class="footer-text-left">
+        <a href="{{ url_for('admin') }}">admin area</a>
+    </p>
+</div>
+
+<script src="static/make_active.js"></script>

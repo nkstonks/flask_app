@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <br>
+    <body>
+        {% if explanation %}
+        Current situation: {{explanation}}
+        {% else %}
+        This is the about page
+        {% endif %}
+        <br>
+        <br>
+    </body>
+{% endblock %}
