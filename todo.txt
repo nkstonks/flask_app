@@ -2,4 +2,4 @@
 
 - update readme
 - update UI
-- change auth.db into a mongodb database
+- docker?

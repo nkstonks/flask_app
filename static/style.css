@@ -1,50 +1,32 @@
-@media screen and (max-width: 600px) {
-  .topnavresponsive {position: relative;}
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .topnavresponsive {position: relative;}
-  .topnav a:nth-child(4) {display: none;}
-  .topnav a:nth-child(5) {display: none;}
-  .topnav a:nth-child(6) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .topnavresponsive {position: relative;}
-  .topnav a:nth-child(7) {display: none;}
-  .topnav a:nth-child(8) {display: none;}
-  .topnav a:nth-child(9) {display: none;}
-  .topnav a.icon {
-    background-color:#FAE042;
-    padding: 20px;
-    float: right;
-    display: block;
-  }
+hr {
+  height: 1px;
+  background-color: #2ab04c;
+  border: none;
 }
 
 .topnav {
-    background-color: #FAE042;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffffff05;
     overflow: hidden;
     position: sticky;
     top: 0;
 }
 
+.topnav h1 {
+  float: left;
+  font-size: 2vw;
+  color: #77e949;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 7.5px 1.5vw;
+  border-width: 0.2vw;
+}
+
 .topnav a { 
-    color: #000000;
+    color: #dcd750;
     font-size: 2vw;
-    font-family: 'Courier New', Courier, monospace;
-    float: left;
-    padding: 7.5px 1.5vw;
-    border-width: 0.2vw;
+    float: right;
+    padding: 7px 1.5vw;
+    margin-top: 20px;
 }
 
 .topnav a.icon {
@@ -60,7 +42,7 @@
 }
 
 .topnav a.active {
-    background-color: #6bff77;
+    background-color: #ffffff50;
 }
 
 .topnav .icon {
@@ -69,6 +51,7 @@
 
 .footer {
   position: fixed;
+  height: 10%;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -79,7 +62,7 @@
 
 .footer-text-left {
   font-size:3vw;
-  padding-left:40px;
+  padding-right: 5px;
   float: right;
 }
 
@@ -88,17 +71,11 @@
 }
 
 body { 
-    color: #000000;
-    font-family: monospace;
-}
 
-h1 {
-    font-size:5vw;
-    text-align: center;
-    border-style: solid;
-    border-color: darkcyan;
-    border-radius: 5px;
-    background-color: darkcyan;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 5px;
+    padding-right: 1%;
+    padding-left: 1%;
+    background: rgb(166, 21, 214);
+    background: linear-gradient(rgba(166, 21, 214, 1) 0%, rgba(103, 9, 121, 1) 0%, rgba(19, 102, 119, 1) 100%);
+    color: #2ab04c;
+    font-family: monospace;
 }

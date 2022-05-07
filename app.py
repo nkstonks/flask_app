@@ -5,7 +5,6 @@ from flask import Flask, render_template, request, url_for, redirect, session
 import os
 import pymongo
 import bcrypt
-import admincreds
 import datetime
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField

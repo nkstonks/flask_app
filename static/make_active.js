@@ -24,20 +24,8 @@ var path = pageURL.substr(pageURL.lastIndexOf('/') + 1);
 if (path === "about") {
     make_active(2)
 }
-else if (path === "links") {
-    make_active(3)
-}
 else if (path === "blog") {
-    make_active(4)
-}
-else if (path === "logout") {
-    make_active(7)
-}
-else if (path === "login") {
-    make_active(8)
-}
-else if (path === "register") {
-    make_active(9)
+    make_active(3)
 }
 else if (!path){
     make_active(1)
