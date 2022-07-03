@@ -1,81 +1,50 @@
-hr {
-  height: 1px;
-  background-color: #2ab04c;
-  border: none;
-}
-
 .topnav {
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #ffffff05;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #2fedea;
+  height: 50px;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .topnav h1 {
   float: left;
   font-size: 2vw;
-  color: #77e949;
+  color: #5a6666;
   font-family: 'Ubuntu', sans-serif;
-  padding: 7.5px 1.5vw;
-  border-width: 0.2vw;
+  margin: 5px 20px;
 }
 
 .topnav a { 
-    color: #dcd750;
+    color: #5a6666;
     font-size: 2vw;
     float: right;
-    padding: 7px 1.5vw;
-    margin-top: 20px;
-}
-
-.topnav a.icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 8px 5px;
-  display: block;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px 30px;
 }
 
 .topnav a:hover {
-  border-color: rgb(51, 51, 51);
-}
-
-.topnav a.active {
-    background-color: #ffffff50;
-}
-
-.topnav .icon {
-  display: none;
+  color: rgb(51, 51, 51);
 }
 
 .footer {
   position: fixed;
-  height: 10%;
+  height: 50px;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: gainsboro;
   color: grey;
-  text-align: right;
 }
 
-.footer-text-left {
-  font-size:3vw;
-  padding-right: 5px;
+.footer a {
   float: right;
+  padding: 10px 10px
 }
 
-.footer-text-left a {
-    font-size:1vw;
+.body {
+  padding-top: 50px;
 }
 
-body { 
-
-    padding-right: 1%;
-    padding-left: 1%;
-    background: rgb(166, 21, 214);
-    background: linear-gradient(rgba(166, 21, 214, 1) 0%, rgba(103, 9, 121, 1) 0%, rgba(19, 102, 119, 1) 100%);
-    color: #2ab04c;
-    font-family: monospace;
-}

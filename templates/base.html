@@ -38,14 +38,10 @@
     <a id="1" href="{{ url_for('home') }}">Home</a>
 </div>
 
-<body>
+<div class="body" id="body">
     {% block content %}{% endblock %}
-</body>
-
-<div class="footer">
-    <p class="footer-text-left">
-        <a href="{{ url_for('admin') }}">admin area</a>
-    </p>
 </div>
 
-<script src="static/make_active.js"></script>
+<div class="footer">
+    <a href="{{ url_for('admin') }}">admin area</a>
+</div>
