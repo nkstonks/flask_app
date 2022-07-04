@@ -6,13 +6,13 @@
 {% extends "base.html" %}
 {% block content %}
     <body>
-        <div class="intro">
-            <div class="intro-text">
-                <div class="title">
-                    This is the about page.
-                </div>
+        <div class="intro-text">
+            <div class="title">
+                This is the about page.
             </div>
+        </div>
             
+        <div class="intro-images">
             <div class="greeting-images">
                 <img src="https://i.kym-cdn.com/entries/icons/mobile/000/029/079/hellothere.jpg" alt="">
                 <p>Hello there</p>
@@ -24,7 +24,9 @@
         </div>
     
         <div class="content">
-            <p>This is the contents of the about page</p>
+            <div class="content-text">
+                <p>This is the contents of the about page</p>
+            </div>
         </div>
     </body>
 {% endblock %}
