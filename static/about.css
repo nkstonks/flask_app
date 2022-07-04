@@ -1,0 +1,50 @@
+.title {
+    border-bottom: 2px solid #5a6666;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.intro-text {
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.intro-images {
+    width: 100%;
+    /* change the margin for greeting-images by the same valye when changing this */
+    height: 245.6px;
+}
+
+.greeting-images {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.greeting-images img {
+    height: 200px;
+}
+
+.greeting-images p {
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+}
+
+.content {
+    position: relative;
+    height: 400px;
+    padding-top: 0;
+}
+
+.content-text p {
+    width: 100%;
+    border-top: 2px solid #5a6666;
+    padding-top: 10px;
+    float: left;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    clear: both;
+}

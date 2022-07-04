@@ -30,8 +30,7 @@ def home():
 
 @app.route('/about')
 def about():
-    explanation = "This bit is still in the works."
-    return render_template("about.html", explanation=explanation)
+    return render_template("about.html")
 
 @app.route('/blog')
 def blog():

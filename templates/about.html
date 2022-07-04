@@ -1,16 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
 
 {% extends "base.html" %}
-
 {% block content %}
-    <hr>
-    <br>
     <body>
-        {% if explanation %}
-        Current situation: {{explanation}}
-        {% else %}
-        This is the about page
-        {% endif %}
-        <br>
-        <br>
+        <div class="intro-text">
+            <div class="title">
+                This is the about page.
+            </div>
+        </div>
+            
+        <div class="intro-images">
+            <div class="greeting-images">
+                <img src="https://i.kym-cdn.com/entries/icons/mobile/000/029/079/hellothere.jpg" alt="">
+                <p>Hello there</p>
+            </div>
+            <div class="greeting-images">
+                <img src="https://i.kym-cdn.com/entries/icons/original/000/034/581/Untitled-5.png" alt="">
+                <p>Bonjour</p>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="content-text">
+                <p>This is the contents of the about page</p>
+            </div>
+        </div>
     </body>
 {% endblock %}

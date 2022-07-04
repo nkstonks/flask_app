@@ -1,46 +1,43 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <hr>
+    {% if greeting %}
+    I just wanted to say
+    <em style="color: green;">{{ greeting }}</em>
     <br>
-    <body>
-        {% if greeting %}
-        I just wanted to say
-        <em style="color: green; font-size: 2em">{{ greeting }}</em>
-        <br>
-        I'll be updating this website every now and then, so keep a lookout for that :)
-        <br>
-        <br>
-        {% else %}
-        <em>Hello</em>, world!
-        {% endif %}
-        UPDATE 21/5/21: Added some UI changes, the font is revamped and the collapsible css has completely changed.
-        <br>
-        <br>
-        UPDATE 15/5/2021: Hehe, long time no see huh, I added several new pages, a new favicon, and the most important of
-        all, a custom domain!
-        <br>
-        <br>
-        UPDATE 17/10/2020: Added a "useful links" page to the site. You can go there and access the major search engines.
-        <br>
-        <br>
-        UPDATE 16/10/2020: Made the navigation bar show even if you scroll down. There's now need to scroll down at this
-        point though.
-        <br>
-        <br>
-        UPDATE 16/10/2020: Added a navigation bar.
-        <br>
-        <br>
-        UPDATE 15/10/2020: Made the page more fancy.
-        <br>
-        <br>
-        UPDATE 14/10/2020: Added an about page. Nothing's in there yet. Also did some css stuff and made it look better
-        <br>
-        <br>
-        UPDATE 10/10/2020: Made the favicon transparent.
-        <br>
-        <br>
-        UPDATE 9/10/2020: Added a Favicon to the website! Making it a transparent image soon.
-    </body>
+    <br>
+    I'll be updating this website every now and then, so keep a lookout for that :)
+    <br>
+    <br>
+    {% else %}
+    <em>Hello</em>, world!
+    {% endif %}
+    UPDATE 21/5/21: Added some UI changes, the font is revamped and the collapsible css has completely changed.
+    <br>
+    <br>
+    UPDATE 15/5/2021: Hehe, long time no see huh, I added several new pages, a new favicon, and the most important of
+    all, a custom domain!
+    <br>
+    <br>
+    UPDATE 17/10/2020: Added a "useful links" page to the site. You can go there and access the major search engines.
+    <br>
+    <br>
+    UPDATE 16/10/2020: Made the navigation bar show even if you scroll down. There's now need to scroll down at this
+    point though.
+    <br>
+    <br>
+    UPDATE 16/10/2020: Added a navigation bar.
+    <br>
+    <br>
+    UPDATE 15/10/2020: Made the page more fancy.
+    <br>
+    <br>
+    UPDATE 14/10/2020: Added an about page. Nothing's in there yet. Also did some css stuff and made it look better
+    <br>
+    <br>
+    UPDATE 10/10/2020: Made the favicon transparent.
+    <br>
+    <br>
+    UPDATE 9/10/2020: Added a Favicon to the website! Making it a transparent image soon.
 {% endblock %}
 </html>
