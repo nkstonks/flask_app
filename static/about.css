@@ -40,6 +40,7 @@
 }
 
 .content-text p {
+    margin-top: 0px;
     width: 100%;
     border-top: 2px solid #5a6666;
     padding-top: 10px;
